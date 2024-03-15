@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRINHO DE COMPRAS - HOT-DOG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="imag/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="pet">PET SHOP - HOTDOG</h1>
+    <header>
+        <nav>
+            <h1 class="titulo"></h1>
+            <ul id="pesquisa">
+                <li  class="lista"><a href="index.html">Home</a></li>
+                <li  class="lista"><a href="sobre.html">Sobre</a></li>
+                <li  class="lista"><a href="servicos.html">Serviços</a></li>
+                <li  class="lista"><a href="produtos.html">Produtos</a></li>
+                <li class="lista"><a href="blog.html">Blog</a></li>
+                <li  class="lista"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>   
+    
+    <section id="produtos">
+        <div class="produtos-content">
+            <h2 id="t-f">Carrinho de compras</h2> <img id="car-compra"  src="carrinho-de-compras/Pictogrammers-Material-Cart.512.png" alt="">
+            <hr>
+            <aside>
+                <label id="DGCP" for="cepInput">Digite o CEP:</label>
+                <input type="text" id="cepInput">
+                <button id="BUSCAR" onclick="buscarEndereco()">Buscar</button>
+                <div id="endereco"></div>
+                
+            
+                <script>
+                    function buscarEndereco() {
+                        var cep = document.getElementById('cepInput').value;
+                        var url = `https://viacep.com.br/ws/${cep}/json/`;
+                        
+                        fetch(url)
+                        .then(response => response.json())
+                        .then(data => {
+                            if(data.erro) {
+                                document.getElementById('endereco').innerText = "CEP não encontrado.";
+                            } else {
+                                var endereco = `CEP: ${data.cep}, ${data.logradouro}, ${data.bairro}, ${data.localidade}, ${data.uf}`;
+                                document.getElementById('endereco').innerText = endereco;
+                            }
+                        })
+                        .catch(error => console.error('Erro:', error));
+                    }
+                </script>
+            </aside>
+           
+    <div class="container22">
+        <h1>Carrinho de Compras</h1>
+        <div class="produy">
+            <div class="product23">
+                <img class="ft-car" src="carrinho-de-compras/coleira_para_cachorro_disney_rei_leao_2778_1_c33fec57b3e98d939f6e99b843e39190.webp" alt="Product 1">
+                <div>
+                    <h3 class="t10">Coleira para Pets</h3>
+                    <p class="preco1">R$ 100,00</p>
+                </div>
+            </div>
+            <div class="product23">
+                <img  class="ft-car" src="carrinho-de-compras/1.webp" alt="Product 2">
+                <div>
+                    <h3 class="t10">Alimento para Pets</h3>
+                    <p class="preco1">R$ 200,00</p>
+                </div>
+            </div>
+            <div class="product23">
+                <img  class="ft-car" src="carrinho-de-compras/brinqeuso-removebg-preview (1).png" alt="Product 3">
+                <div>
+                    <h3 class="t10">Brinquedo para Pets</h3>
+                    <p class="preco1">R$ 300,00</p>
+                   
+                </div>
+            </div>
+        </div>
+        <p class="total">Total: R$ 600,00</p>
+        <div class="form-container">
+            <h2>Finalizar Compra</h2>
+            
+            <button  class="button-compra">Finalizar Compra</button>
+        </div>
+    </div>
+</body>
+</html>

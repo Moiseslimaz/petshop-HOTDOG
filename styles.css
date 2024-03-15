@@ -1,0 +1,319 @@
+body{
+    background-image: linear-gradient(to bottom, rgba(141, 140, 140, 0.713), rgba(196, 194, 188, 0.968), rgb(255, 255, 255));
+    margin: 30px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+
+.pet{
+    text-align: center;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    background-color: rgba(0, 0, 0, 0.274);
+    background-size: cover;
+    border-radius: 900px;
+    text-shadow: rgba(0, 0, 0, 0.496) 0.1em 0.1em 0.2em;
+    color: white;
+    font-size: 50px;
+}
+.titulo{
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.356);
+    background-image: url(imag/fundo.webp);
+    text-align: center;
+    height: 220px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+#pesquisa{
+    color: azure;
+    font-size: 20px;
+    display: flex;
+   
+  }
+  .lista{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    margin-bottom: 100px;
+  }  
+ 
+#highlight-home{
+    background-color: rgba(0, 0, 0, 0.259);
+    padding: 20px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.highlight-sobre{
+  background-color: rgba(240, 248, 255, 0.259);
+  padding: 20px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgb(255, 255, 255);
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+  header nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Madimi One", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+   font-style: italic;
+   text-shadow: rgb(173, 162, 162) 0.1em 0.1em 0.2em
+  }
+
+  footer{
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.183);
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+#logo{
+    border-radius: 60px;
+
+}
+.services{
+    background-color: rgba(240, 248, 255, 0.259);
+    padding: 20px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header a{
+  color: rgb(160, 192, 179);
+  text-decoration: none;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+  transition: .2s;
+}
+header a:hover{
+  color: rgb(163, 163, 153);
+  transform: scale(1.09);
+  font-size: 25px;
+}
+
+.welcome{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+#sobre-txt{
+  text-align: justify;
+  font-family: "Indie Flower", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#logo-ft{
+  width: 1300px;
+  height: 300px;
+  border-radius: 50px;
+  transform:  rotateY(150deg);
+           transition-duration: 9s;
+           
+}
+#ft-1{
+  width: 400px;
+  height: 300px;
+  margin-left: 900px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 30px;
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite alternate;
+  border-radius: 100px;
+  
+}
+#ft-2{
+  height: 300px;
+  width: 400px;
+  margin-right: 900px;
+  margin-top: -990px;
+  border: 2px solid rgb(0, 0, 0);
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite alternate;
+  border-radius: 100px;
+}
+#ft-3{
+  height: 300px;
+  width: 400px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-top: -999px;
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite alternate;
+  border-radius: 100px;
+  transition: .2s;
+  
+}
+@keyframes flutuar{
+  0%{
+      top: 0;
+      left: 0;
+      right: 0px;
+  }
+  100%{
+      top: 33px;
+      left: 33px;
+      right: 33px;
+  }
+}
+#tosa{
+  width: 200px;
+  height: 200px;
+}
+.consulta{
+  width: 400px;
+  height: 300px;
+  border-radius: 50px;
+  animation: slidein 4s ease-in-out
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 400px;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 400px;
+  }
+}
+.titulo-servico{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+#produtos {
+  background-color: #f4f4f488;
+  padding: 50px 0;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+.produtos-content h2 {
+  color: #000000;
+  font-size: 28px;
+}
+.produto img {
+  transition: transform 0.3s;
+}
+
+.produto img:hover {
+  transform: scale(1.1);
+}
+.pt-usa{
+  width: 400px;
+  height: 450px;
+  border-radius: 50px;
+}
+.preco{
+  color: red;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+}
+.t1{
+  color: yellow;
+  text-shadow: black 0.1em 0.1em 0.2em
+
+}
+.t2{
+  font-style: italic;
+  font-weight: 700;
+}
+#t-p{
+  font-size: 45px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr{
+  color: #000000;
+}
+.testimonials{
+  text-align: center;
+  font-size:25px;
+}
+.blog{
+  text-align: center;
+  font-size:25px;
+}
+.button-compra{
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+#car-compra{
+  width: 50px;
+  height: 50px;
+
+  
+}
+#id-tf{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+
+}
+
+.ft-car{
+  text-align: center;
+  width: 80px;
+  height: 80px;
+}
+.product23{
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 990px;
+  height: 250px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(199, 199, 198));
+  text-align: left;
+  margin-left: 20px;
+}
+.produy{
+  text-align: justify;
+}
+.t10{
+  color: #000000;
+  font-style: italic;
+  font-size: 27px;
+}
+.t6{
+  font-size: 19px;
+}
+.preco1{
+  font-size: 15px;
+  color: red;
+}

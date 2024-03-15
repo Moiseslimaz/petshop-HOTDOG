@@ -1,0 +1,23 @@
+
+#CONSUTAR{
+    background-color: rgb(247, 211, 10);
+    font-size: larger;
+}
+#BUSCAR{
+    background-color: blue;
+    color: aliceblue;
+    font-size: 30PX;
+}
+#img{
+    width: 300px;
+    right: 300px;
+  
+}
+#loca2{
+    width: 50px;
+    right: 50px;
+}
+#loca{
+    width: 300px;
+    right: 300px; 
+}
